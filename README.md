@@ -11,8 +11,8 @@ $ curl http://localhost:8080/reset
 
 # Used in
 
-https://www.youtube.com/watch?v=spfyxKPrf6Q (testing)
-https://www.youtube.com/watch?v=jdyaG01aCLU (tiny whoop race (post edit multiple views))
+- https://www.youtube.com/watch?v=spfyxKPrf6Q (testing)
+- https://www.youtube.com/watch?v=jdyaG01aCLU (tiny whoop race (post edit multiple views))
 
 # Images
 
