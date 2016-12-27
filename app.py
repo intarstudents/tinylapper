@@ -4,7 +4,7 @@ import time
 import picamera
 import numpy as np
 import socket
-import sys
+import sys, getopt
 
 from BaseHTTPServer import HTTPServer, BaseHTTPRequestHandler
 
@@ -14,9 +14,16 @@ motion_dtype = np.dtype([
     ('sad', 'u2'),
     ])
 
+livesplit_port = 16834
+try:
+    if sys.argv[1]:
+        livesplit_port = int(sys.argv[1])
+except:
+    pass
+
 livesplit = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 livesplit.settimeout(3)
-livesplit.connect(("stream.lan", 16834))
+livesplit.connect(("stream.lan", livesplit_port))
 
 last_motion = time.time() + 5
 mode = 0
