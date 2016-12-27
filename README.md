@@ -2,6 +2,13 @@
 
 TINYLAPPER uses Raspberry Pi + camera module and LED strip above to detect lap times for Tiny Whoop sized fun.
 
+# Dependencies
+
+```
+$ sudo apt-get update
+$ sudo apt-get install python-picamera python3-picamera
+```
+
 # Usage (very basic not indept)
 
 ```
